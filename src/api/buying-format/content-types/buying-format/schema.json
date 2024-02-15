@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "buying_formats",
+  "info": {
+    "singularName": "buying-format",
+    "pluralName": "buying-formats",
+    "displayName": "BuyingFormat",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "adFormat": {
+      "type": "string"
+    },
+    "ads": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::ad.ad",
+      "mappedBy": "buying_format"
+    }
+  }
+}
