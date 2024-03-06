@@ -4,5 +4,5 @@ module.exports = ({ env }) => ({
   app: {
     keys: env.array("APP_KEYS"),
   },
-  //url: "http://89.168.88.149/strapi",
+  url: "https://game-zone.mk/strapi",
 });
