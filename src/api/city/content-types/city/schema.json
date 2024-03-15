@@ -15,10 +15,10 @@
     "cityName": {
       "type": "string"
     },
-    "ads": {
+    "posts": {
       "type": "relation",
       "relation": "oneToMany",
-      "target": "api::ad.ad",
+      "target": "api::post.post",
       "mappedBy": "city"
     }
   }

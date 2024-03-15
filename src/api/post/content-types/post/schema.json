@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "ads",
+  "collectionName": "posts",
   "info": {
-    "singularName": "ad",
-    "pluralName": "ads",
-    "displayName": "Ad",
+    "singularName": "post",
+    "pluralName": "posts",
+    "displayName": "Post",
     "description": ""
   },
   "options": {
@@ -36,18 +36,13 @@
       "type": "media",
       "multiple": true,
       "required": false,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ]
+      "allowedTypes": ["images", "files", "videos", "audios"]
     },
     "category": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::category.category",
-      "inversedBy": "ads"
+      "inversedBy": "posts"
     },
     "description": {
       "type": "richtext",
@@ -57,25 +52,25 @@
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::city.city",
-      "inversedBy": "ads"
+      "inversedBy": "posts"
     },
     "condition": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::condition.condition",
-      "inversedBy": "ads"
+      "inversedBy": "posts"
     },
     "user": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "plugin::users-permissions.user",
-      "inversedBy": "ads"
+      "inversedBy": "posts"
     },
     "buying_format": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::buying-format.buying-format",
-      "inversedBy": "ads"
+      "inversedBy": "posts"
     }
   }
 }

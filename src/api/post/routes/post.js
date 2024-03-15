@@ -1,18 +1,18 @@
 "use strict";
 
 /**
- * ad router.
+ * post router.
  */
 
 const { createCoreRouter } = require("@strapi/strapi").factories;
 
-module.exports = createCoreRouter("api::ad.ad", {
+module.exports = createCoreRouter("api::post.post", {
   config: {
     update: {
-      policies: ["api::ad.is-owner"],
+      policies: ["api::post.is-owner"],
     },
     delete: {
-      policies: ["api::ad.is-owner"],
+      policies: ["api::post.is-owner"],
     },
   },
 });

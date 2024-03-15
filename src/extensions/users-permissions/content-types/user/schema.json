@@ -63,10 +63,10 @@
       "inversedBy": "users",
       "configurable": false
     },
-    "ads": {
+    "posts": {
       "type": "relation",
       "relation": "oneToMany",
-      "target": "api::ad.ad",
+      "target": "api::post.post",
       "mappedBy": "user"
     }
   }

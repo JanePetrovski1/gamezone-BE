@@ -1,16 +1,16 @@
 "use strict";
 
 /**
- *  ad controller
+ *  post controller
  */
 
 const { createCoreController } = require("@strapi/strapi").factories;
 
-module.exports = createCoreController("api::ad.ad", ({ strapi }) => ({
-  async myAds(ctx) {
+module.exports = createCoreController("api::post.post", ({ strapi }) => ({
+  async myPosts(ctx) {
     const { user } = ctx.state;
 
-    const entries = await strapi.entityService.findMany("api::ad.ad", {
+    const entries = await strapi.entityService.findMany("api::post.post", {
       filters: {
         user: {
           id: {
